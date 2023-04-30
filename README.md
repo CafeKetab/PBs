@@ -2,7 +2,7 @@
 
 protocol buffers for CafeKetab microservices
 
-## Install `proto-buf` Dependencies
+## Install `proto-buf` Dependencies (Go)
 
 ```bash
 # protoc-gen-go
