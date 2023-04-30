@@ -2,15 +2,15 @@ syntax = "proto3";
 package auth;
 option go_package = "github.com/CafeKetab/PBs/golang/auth";
 
-message TokenContract {
-    string Token = 1;
+message Id {
+    uint64 Value = 1;
 }
 
-message TokenMetadataResponse {
-    bool IsValid = 1;
-    uint64 Id = 2;
+message Token {
+    string Value = 1;
 }
 
 service Auth {
-    rpc TokenMetadata(TokenContract) returns (TokenMetadataResponse) {}
+    rpc CreateTokenFromId(Id) returns (Token) {}
+    rpc GetIdFromToken(Token) returns (Id) {}
 }
