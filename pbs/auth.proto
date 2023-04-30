@@ -1,5 +1,6 @@
 syntax = "proto3";
-option go_package = "./auth";
+package auth;
+option go_package = "github.com/CafeKetab/PBs/golang/auth";
 
 message TokenContract {
     string Token = 1;

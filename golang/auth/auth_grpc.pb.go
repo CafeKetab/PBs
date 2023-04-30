@@ -19,7 +19,7 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	Auth_TokenMetadata_FullMethodName = "/Auth/TokenMetadata"
+	Auth_TokenMetadata_FullMethodName = "/auth.Auth/TokenMetadata"
 )
 
 // AuthClient is the client API for Auth service.
@@ -96,7 +96,7 @@ func _Auth_TokenMetadata_Handler(srv interface{}, ctx context.Context, dec func(
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var Auth_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "Auth",
+	ServiceName: "auth.Auth",
 	HandlerType: (*AuthServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
